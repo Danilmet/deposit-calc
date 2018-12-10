@@ -1,4 +1,4 @@
-#include <deposit.h>
+#include "deposit.h"
 
 int check(int amount, int term)
 {
