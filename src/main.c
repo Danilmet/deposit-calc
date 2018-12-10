@@ -2,16 +2,16 @@
 
 int main()
 {
-	int amount = 0, term = 0, check = 0;
+	int amount = 0, term = 0, checkValue = 0;
 	double contribution = 0.0;
 	printf("Enter the amount of Your deposit:  ");
 	scanf("%d", &amount);
 	printf("Enter the term of Your deposit:  ");
 	scanf("%d", &term);
-	check = check(amount, term);
-	if (check)
+	checkValue = check(amount, term);
+	if (checkValue)
 	{
-		return check;
+		return checkValue;
 	}
 	contribution = calc(amount, term);
 	printf("Your contribution = %.0f \n", contribution);
