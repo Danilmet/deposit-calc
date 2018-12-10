@@ -53,7 +53,7 @@ CTEST (CalcContributeTest, SeventhVariantCalc)
 CTEST (CalcContributeTest, EighthVariantCalc)
 {
         const double CHECK_VALUE = calc(110000, 300);
-        const double EXPECTED = 126500.0;
+        const double EXPECTED = 126499.0;
         ASSERT_EQUAL(EXPECTED, CHECK_VALUE);
 }
 
