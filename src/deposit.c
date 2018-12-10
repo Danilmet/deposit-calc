@@ -7,7 +7,7 @@ int check(int amount, int term)
 		printf("Amount of Your deposit must be bigger then 10.000\n");
 		return 1;
 	}
-	if (term < 1 || term > 366)
+	if (term < 1 || term > 365)
 	{
 		printf("Term of your deposit must be less then 365 days\n");
 		return 1;
