@@ -15,7 +15,7 @@ int check(int amount, int term)
 	return 0;
 }
 
-int calc(int amount, int term)
+double calc(int amount, int term)
 {
 	double contribution = (double )amount;
 
