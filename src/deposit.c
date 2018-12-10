@@ -1,13 +1,7 @@
-#include <stdio.h>
+#include "deposit.h"
 
-int main()
+int check(int amount, int term)
 {
-	int amount = 0, term = 0;
-	double contribution = 0.0;
-	printf("Enter the amount of Your deposit:  ");
-	scanf("%d", &amount);
-	printf("Enter the term of Your deposit:  ");
-	scanf("%d", &term);
 	if (amount < 10000)
 	{
 		printf("Amount of Your deposit must be bigger then 10.000\n");
@@ -18,7 +12,13 @@ int main()
 		printf("Term of your deposit must be less then 365 days\n");
 		return 1;
 	}
-	contribution = (double )amount;
+	return 0;
+}
+
+double calc(int amount, int term)
+{
+	double contribution = (double )amount;
+
 	if (term <= 30)
 	{
 		contribution *= 0.9;
@@ -56,6 +56,5 @@ int main()
 			contribution *= 1.15;
 		}
 	}
-	printf("Your contribution = %.0f \n", contribution);
-	return 0;
+	return contribution;
 }
